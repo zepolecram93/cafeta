@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-sm-12"><br/>
+   <div align="center">
+       <img src="tasa2.png" alt="center"><br/>
+       <h1 class="text-center" ><i>La Cafeta</i></h1>
+		
+       <div ng-form="form" class="form-inline">
+		   <input type="text" placeholder="ID" class="form-control" ng-model="pedido.id">
+		   <input type="text" placeholder="Cantidad" class="form-control" ng-model="pedido.cantidad">
+		   <input type="text" placeholder="Comentarios" class="form-control" ng-model="pedido.comentarios"><br/><br/>
+		   Folio:
+		   <input type="text" class="form-control" value="{{p.folio}}" disabled>
+		   <!--<input type="text" placeholder="Folio" class="form-control" ng-model="pedido.">-->
+		   <br/><br/> 
+
+		   <button type="button" class="btn btn-primary" ng-click="p.pedir(pedido)">Aceptar</button>
+		   <button type="button" class="btn btn-primary" ui-sref="app.consulta">Consultar Productos</button>
+       </div>
+       </div><br/>	
+	</div>
+</div>
+    

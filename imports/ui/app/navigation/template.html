@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
+
+	<div class="navbar-default sidebar">
+		<div class="sidebar-nav navbar-collapse">
+			<ul class="nav" id="side-menu">
+				<li ui-sref-active="active">
+					<a   class="text-center" ui-sref="app.dashboard">Principal</a>
+				</li>
+				<li ui-sref-active="active">    
+					<a   class="text-center" ui-sref="app.users.index">Pedidos</a>
+				</li>
+               <li ui-sref-active="active">    
+					<a  class="text-center" ui-sref="app.consulta">Consulta Prod.</a>
+				</li>
+                <li class="dropdown" uib-dropdown="">
+                    <a class="text-center" class="dropdown-toggle" uib-dropdown-toggle="" style="cursor: pointer">
+                        {{nav.currentUser.profile.name}} <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user" uib-dropdown-menu="">
+                        <li><a ng-click="nav.logout()"><i class="fa fa-fw fa-sign-out"></i> iniciar sesion</a></li>
+                    </ul>
+                </li>
+			</ul>
+		</div>
+	</div>
+</nav>
